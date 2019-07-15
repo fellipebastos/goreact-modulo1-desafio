@@ -8,10 +8,17 @@ import './assets/styles.scss';
 
 //Plugins Import
 import Header from './components/Header'
+import Post from './components/Post/Post'
 
 class App extends Component {
   render() {
-    return <Header />;
+    return (
+      <Fragment>
+        <Header />
+        <Post />
+        <Post />
+      </Fragment>
+    );
   }
 }
 
