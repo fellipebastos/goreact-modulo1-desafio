@@ -1,0 +1,41 @@
+{
+  "name": "goreact-modulo1-desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "watch": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fellipebastos/goreact-modulo1-desafio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fellipebastos/goreact-modulo1-desafio/issues"
+  },
+  "homepage": "https://github.com/fellipebastos/goreact-modulo1-desafio#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "babel-eslint": "^10.0.2",
+    "css-loader": "^3.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.0.1",
+    "eslint-plugin-react": "^7.14.2",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
