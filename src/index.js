@@ -6,9 +6,12 @@ import { render } from 'react-dom';
 import './assets/reset.css';
 import './assets/styles.scss';
 
+//Plugins Import
+import Header from './components/Header'
+
 class App extends Component {
   render() {
-    return '';
+    return <Header />;
   }
 }
 
