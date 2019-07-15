@@ -1,14 +1,13 @@
-import React, { Fragment } from 'react'
-import PropTypes from 'prop-types';
+import React from 'react'
 
 // Import Components
 import PostHeader from './PostHeader'
 import PostBody from './PostBody'
 
-const Post = () => (
+const Post = ({ data }) => (
   <div className="post">
-    <PostHeader />
-    <PostBody />
+    <PostHeader avatar={data.avatar} name={data.name} time={data.time}/>
+    <PostBody body={data.body} />
   </div>
 );
 

@@ -1,17 +1,23 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types';
 
-const PostHeader = (props) => (
+const PostHeader = ({ avatar, name, time }) => (
   <div className="post-header">
-    <img className="post-avatar" src="./assets/images/avatar1.png"/>
+    <img className="post-avatar" src={avatar}/>
 
     <div className="post-info">
-      <strong className="name">Lorem Ipsum Dolor</strong>
-      <small className="time">há 1 min</small>
+      <strong className="name">{name}</strong>
+      <small className="time">{time}</small>
     </div>
 
     <hr/>
   </div>
 );
+
+PostHeader.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+}
 
 export default PostHeader;
